@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Add New Plant — GreenNest</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<main class="dialog-page">
+  <div class="container">
+    <section class="dialog" role="dialog" aria-labelledby="add-plant-title">
+      <a class="back-link" href="plant-tracker.html" aria-label="Назад"></a>
+      <header class="dialog__head">
+        <h1 class="dialog__title" id="add-plant-title"><img src="img/feature-tracker.png" alt="" width="32" height="32">Add New Plant</h1>
+      </header>
+      <form class="form" action="#">
+        <div class="form__field">
+          <label class="form__label" for="plant-name">Plant Name</label>
+          <input class="form__input" id="plant-name" type="text" placeholder="Tomato Tom">
+        </div>
+        <div class="form__field">
+          <label class="form__label" for="plant-species">Species</label>
+          <input class="form__input" id="plant-species" type="text" placeholder="Cherry Tomato">
+        </div>
+        <div class="form__field">
+          <label class="form__label" for="plant-image">Image URL (optional)</label>
+          <input class="form__input" id="plant-image" type="url" placeholder="image.jpg">
+        </div>
+        <div class="form__field">
+          <label class="form__label" for="plant-notes">Notes (optional)</label>
+          <input class="form__input" id="plant-notes" type="text" placeholder="Any care instructions">
+        </div>
+        <div class="form__actions">
+          <a class="button button--outline-dark" href="plant-tracker.html">Cancel</a>
+          <button class="button button--gradient" type="submit">Add New Plant</button>
+        </div>
+      </form>
+    </section>
+  </div>
+</main>
+
+</body>
+</html>
