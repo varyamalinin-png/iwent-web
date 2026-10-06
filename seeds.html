@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Seed Catalog — GreenNest</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<header class="app-header">
+  <div class="container app-header__inner">
+    <a class="logo" href="index.html">
+      <img class="logo__icon" src="img/icon-leaf.png" alt="" width="24" height="24">
+      GreenNest
+    </a>
+
+    <input class="menu-toggle" type="checkbox" id="menu-toggle">
+
+    <nav class="main-nav" aria-label="Основное меню">
+      <ul class="main-nav__list">
+        <li><a class="main-nav__link" href="index.html"><img class="main-nav__icon" src="img/icon-leaf.png" alt="" width="24" height="24">Home</a></li>
+        <li><a class="main-nav__link main-nav__link--active" href="seeds.html" aria-current="page"><img class="main-nav__icon" src="img/icon-seedling.png" alt="" width="24" height="24">Seeds</a></li>
+        <li><a class="main-nav__link" href="services.html"><img class="main-nav__icon" src="img/icon-tree.png" alt="" width="24" height="24">Services</a></li>
+        <li><a class="main-nav__link" href="plant-tracker.html"><img class="main-nav__icon" src="img/icon-seed.png" alt="" width="24" height="24">Plant Tracker</a></li>
+        <li><a class="main-nav__link" href="eco-points.html"><img class="main-nav__icon" src="img/icon-drop.png" alt="" width="24" height="24">Eco-Points</a></li>
+      </ul>
+    </nav>
+
+    <div class="user-actions">
+      <a class="cart-link" href="cart.html" aria-label="Корзина">
+        <img src="img/icon-cart.png" alt="" width="28" height="28">
+      </a>
+      <a class="button button--outline" href="sign-in.html">Sign-In</a>
+      <a class="button button--primary" href="sign-up.html">Join GreenNest</a>
+    </div>
+
+    <label class="menu-button" for="menu-toggle" aria-label="Открыть меню">
+      <span class="menu-button__icon"></span>
+    </label>
+  </div>
+</header>
+
+<main class="app-page">
+  <div class="container">
+    <a class="back-link" href="index.html" aria-label="Назад"></a>
+    <header class="page-heading">
+      <h1 class="page-heading__title">Seed Catalog</h1>
+      <div class="page-heading__actions">
+        <a class="button button--outline button--pill" href="seed-exchange.html">Seed Exchange</a>
+        <a class="button button--primary button--pill" href="subscription.html">Subscription Box</a>
+      </div>
+      <p class="page-heading__subtitle">Browse our selection of premium seeds for your garden</p>
+    </header>
+
+    <p class="catalog__label"><img src="img/icon-seedling.png" alt="" width="32" height="32">Seed Catalog</p>
+
+    <div class="catalog">
+      <form class="catalog-filters" action="#" aria-label="Фильтры каталога">
+        <div class="form__field">
+          <label class="form__label" for="seed-search">Search Seeds</label>
+          <input class="form__input" id="seed-search" type="search" placeholder="Search by name or description...">
+        </div>
+        <div class="form__field">
+          <label class="form__label" for="seed-category">Category</label>
+          <select class="form__input" id="seed-category">
+            <option>Select category</option>
+            <option>Vegetables</option>
+            <option>Herbs</option>
+            <option>Flowers</option>
+          </select>
+        </div>
+        <div class="form__field">
+          <label class="form__label" for="seed-difficulty">Difficulty Level</label>
+          <select class="form__input" id="seed-difficulty">
+            <option>Select difficulty</option>
+            <option>Easy</option>
+            <option>Moderate</option>
+            <option>Expert</option>
+          </select>
+        </div>
+        <div class="filter-range">
+          <div class="filter-range__head">
+            <label for="seed-price">Price Range</label>
+            <output class="filter-range__value" for="seed-price">$0.00 - $10.00</output>
+          </div>
+          <input id="seed-price" type="range" min="0" max="10" value="10">
+        </div>
+        <fieldset class="filter-options">
+          <legend class="filter-options__title">Special Features</legend>
+          <label class="radio-option"><input type="checkbox" name="feature" checked>Organic Seeds</label>
+          <label class="radio-option"><input type="checkbox" name="feature">Heirloom Varieties</label>
+        </fieldset>
+      </form>
+
+      <ul class="product-grid">
+        <li>
+          <article class="seed-card">
+            <div class="seed-card__media">
+              <img class="seed-card__image" src="img/seed-tomato.jpg" alt="Спелые томаты на кусте" width="800" height="445" loading="lazy">
+              <div class="seed-card__labels">
+                <span class="tag tag--solid">Organic</span>
+                <span class="tag tag--brown">Heirloom</span>
+              </div>
+              <span class="seed-card__points">15 Eco-Points</span>
+            </div>
+            <div class="seed-card__body">
+              <div class="seed-card__links">
+                <a href="fertilizers.html"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20c0-9 6-15 16-16-1 10-7 16-16 16zM4 20l8-8"/></svg>Fertilizers</a>
+                <a href="index.html#hero-title"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12a8 8 0 0 1-11.6 7.1L4 20.5l1.4-4.9A8 8 0 1 1 21 12z"/></svg>Get Help</a>
+              </div>
+              <div class="seed-card__head">
+                <h2 class="seed-card__title">Organic Tomato</h2>
+                <p class="seed-card__price">$3.99</p>
+              </div>
+              <p class="seed-card__description">Sweet and juicy heirloom tomatoes, perfect for salads and sauces.</p>
+              <ul class="seed-card__tags">
+                <li class="tag">Easy</li>
+                <li class="tag">Vegetables</li>
+              </ul>
+              <ul class="care-list" aria-label="Условия выращивания">
+                <li class="care-list__item"><img src="img/care-sun.png" alt="" width="22" height="22">Full Sun</li>
+                <li class="care-list__item"><img src="img/care-water.png" alt="" width="22" height="22">Medium</li>
+                <li class="care-list__item"><img src="img/care-days.png" alt="" width="22" height="22">70-85 days</li>
+              </ul>
+            </div>
+            <footer class="seed-card__footer">
+              <div class="quantity">
+                <button class="quantity__button" type="button" aria-label="Уменьшить количество">−</button>
+                <input class="quantity__input" type="text" value="1" aria-label="Количество" inputmode="numeric">
+                <button class="quantity__button" type="button" aria-label="Увеличить количество">+</button>
+              </div>
+              <button class="button button--dark" type="button">Add to Cart</button>
+            </footer>
+          </article>
+        </li>
+        <li>
+          <article class="seed-card">
+            <div class="seed-card__media">
+              <img class="seed-card__image" src="img/seed-basil.jpg" alt="Листья базилика" width="800" height="445" loading="lazy">
+              <div class="seed-card__labels">
+                <span class="tag tag--solid">Organic</span>
+                <span class="tag tag--brown">Heirloom</span>
+              </div>
+              <span class="seed-card__points">15 Eco-Points</span>
+            </div>
+            <div class="seed-card__body">
+              <div class="seed-card__links">
+                <a href="fertilizers.html"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20c0-9 6-15 16-16-1 10-7 16-16 16zM4 20l8-8"/></svg>Fertilizers</a>
+                <a href="index.html#hero-title"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12a8 8 0 0 1-11.6 7.1L4 20.5l1.4-4.9A8 8 0 1 1 21 12z"/></svg>Get Help</a>
+              </div>
+              <div class="seed-card__head">
+                <h2 class="seed-card__title">Basil</h2>
+                <p class="seed-card__price">$2.99</p>
+              </div>
+              <p class="seed-card__description">Fragrant herb that complements many dishes.</p>
+              <ul class="seed-card__tags">
+                <li class="tag">Easy</li>
+                <li class="tag">Herbs</li>
+              </ul>
+              <ul class="care-list" aria-label="Условия выращивания">
+                <li class="care-list__item"><img src="img/care-sun.png" alt="" width="22" height="22">Full Sun</li>
+                <li class="care-list__item"><img src="img/care-water.png" alt="" width="22" height="22">Medium</li>
+                <li class="care-list__item"><img src="img/care-days.png" alt="" width="22" height="22">21-28 days</li>
+              </ul>
+            </div>
+            <footer class="seed-card__footer">
+              <div class="quantity">
+                <button class="quantity__button" type="button" aria-label="Уменьшить количество">−</button>
+                <input class="quantity__input" type="text" value="1" aria-label="Количество" inputmode="numeric">
+                <button class="quantity__button" type="button" aria-label="Увеличить количество">+</button>
+              </div>
+              <button class="button button--dark" type="button">Add to Cart</button>
+            </footer>
+          </article>
+        </li>
+      </ul>
+    </div>
+  </div>
+</main>
+
+<footer class="app-footer">
+  <div class="container app-footer__grid">
+    <section class="app-footer__about">
+      <a class="logo" href="index.html">
+        <img class="logo__icon" src="img/icon-leaf.png" alt="" width="48" height="48">
+        GreenNest
+      </a>
+      <p class="app-footer__text">Nurturing nature, one seed at a time. We're passionate about helping you create sustainable, thriving gardens.</p>
+      <ul class="social-links" aria-label="GreenNest в соцсетях">
+        <li><a class="social-links__link" href="#" aria-label="Instagram"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".5"/></svg></a></li>
+        <li><a class="social-links__link" href="#" aria-label="Twitter"><svg viewBox="0 0 24 24"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"/></svg></a></li>
+        <li><a class="social-links__link" href="#" aria-label="Facebook"><svg viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a></li>
+      </ul>
+    </section>
+
+    <nav class="footer-links" aria-labelledby="footer-quick">
+      <h2 class="footer-links__title footer-links__title--accent" id="footer-quick">Quick Links</h2>
+      <ul class="footer-links__list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="seeds.html">Seed Catalog</a></li>
+        <li><a href="services.html">Gardening Services</a></li>
+        <li><a href="plant-tracker.html">Plant Tracker</a></li>
+        <li><a href="eco-points.html">Eco-Points</a></li>
+      </ul>
+    </nav>
+
+    <nav class="footer-links" aria-labelledby="footer-learn">
+      <h2 class="footer-links__title" id="footer-learn">Learn More</h2>
+      <ul class="footer-links__list">
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Sustainability Commitment</a></li>
+        <li><a href="#">Gardening Blog</a></li>
+        <li><a href="#">Community Gardens</a></li>
+        <li><a href="#">Educational Resources</a></li>
+      </ul>
+    </nav>
+
+    <section class="footer-links" aria-labelledby="footer-contacts">
+      <h2 class="footer-links__title" id="footer-contacts">Contact Us</h2>
+      <address class="contact-list">
+        <p class="contact-list__item"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 22s7-6.6 7-12a7 7 0 1 0-14 0c0 5.4 7 12 7 12z"/><circle cx="12" cy="10" r="2.5"/></svg><span>123 Green Avenue<br>Garden City, GC 12345</span></p>
+        <p class="contact-list__item"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg><a href="tel:+15551234567">(555) 123-4567</a></p>
+        <p class="contact-list__item"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg><a href="mailto:support@greennest.com">support@greennest.com</a></p>
+      </address>
+    </section>
+  </div>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sign In — GreenNest</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<main class="auth-page">
+  <div class="container auth-card">
+    <a class="back-link" href="index.html" aria-label="Назад"></a>
+    <h1 class="auth-card__title">Sign in to GreenNest</h1>
+    <p class="auth-card__subtitle">Enter your email and password to access your account</p>
+    <form class="auth-form" action="#">
+      <div class="form__field">
+        <label class="form__label" for="signin-email">E-mail</label>
+        <input class="form__input form__input--white" id="signin-email" type="email" autocomplete="email" placeholder="your@gmail.com">
+      </div>
+      <div class="form__field">
+        <label class="form__label" for="signin-password">Password</label>
+        <input class="form__input form__input--white" id="signin-password" type="password" autocomplete="current-password">
+      </div>
+      <div class="form__actions">
+        <a class="button button--outline-dark" href="sign-up.html">Create Account</a>
+        <button class="button button--gradient" type="submit">Sign In</button>
+      </div>
+    </form>
+  </div>
+</main>
+
+</body>
+</html>
