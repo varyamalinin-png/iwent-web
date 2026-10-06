@@ -4,7 +4,9 @@ GreenNest — веб-приложение для садоводов: катал�
 
 **Исходные макеты:** [GreenNest — Figma Community](https://www.figma.com/community/file/1623942260962687765/greenest)
 
-**Вёрстка:** [index.html](index.html)
+**Вёрстка (живые страницы):** https://varyamalinin-png.github.io/iwent-web/
+
+**Исходники вёрстки:** [index.html](index.html) и остальные файлы в этой ветке
 
 ## Экраны
 
